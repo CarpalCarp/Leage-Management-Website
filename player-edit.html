@@ -1,0 +1,170 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+  <!-- Place favicon.ico in the root directory -->
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+
+  <!-- DataTables -->
+  <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/dt/dt-1.10.18/af-2.3.2/b-1.5.4/r-2.2.2/sl-1.2.6/datatables.min.css"/>
+
+  <!-- Font Awesome icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+</head>
+
+<body>
+  <!--[if lte IE 9]>
+    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+  <![endif]-->
+
+  <!-- Add your site or application content here -->
+    <nav class="navbar navbar-inverse">
+          <div class="container-fluid">
+            <div class="navbar-header">
+                <a href="#">
+                    <img src="img/soccerBall.png" alt="Soccer Ball" width="50px" height="50px">
+                    <button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#myDropDown">
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                    </button>
+                </a>
+            </div>
+              <div class="collapse navbar-collapse" id="myDropDown">
+                <ul class="nav navbar-nav">
+                  <li><a href="home.html" target="_blank">Home</a></li>
+                  <li><a href="teams.html" target="_blank">Teams</a></li>
+                  <li><a href="#">Superliga</a></li>
+                  <li><a href="#">Bundesliga</a></li>
+                  <li><a href="#">Serie A</a></li>
+                  <li><a href="#">La Liga</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+                    <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                    <li><a href="#">Highlights</a></li>
+                    <li><a href="#">More</a></li>
+                </ul>
+            </div>
+          </div>
+    </nav>
+
+    <div class="container-fluid">
+      <section id="teamForm">
+        <div class="row">
+            <form accept="image/gif, image/jpeg" id="formAlign" class="form" role="form"> <!-- Form Starts here -->
+                <div class="form-group col-md-4 col-xs-4 col-sm-4">
+                  <h2>Player Info:</h2>
+
+                  <label for="playerName" class="mb-2 mr-sm-2">Player First Name:</label>
+                  <input type="text" class="form-control mb-2 mr-sm-2" placeholder="Team Name" id="playerName">
+                  <div id="playerNameErr"></div>
+
+                  <label for="playerLast" class="mb-2 mr-sm-2">Player Last Name:</label>
+                  <input type="text" class="form-control mb-2 mr-sm-2" placeholder="First Name" id="playerLast">
+                  <div id="playerLastErr"></div>
+
+                  <label for="playerEmail" class="mb-2 mr-sm-2">Player Email:</label>
+                  <input type="text" class="form-control mb-2 mr-sm-2" placeholder="Email address" id="playerEmail">
+                  <div id="playerEmailErr"></div>
+
+                  <label for="playerBirth" class="mb-2 mr-sm-2">Player DOB:</label>
+                  <input type="date" class="form-control mb-2 mr-sm-2" min="1980-01-01" max="2008-01-01" id="playerBirth">
+                  <div id="playerBirthErr"></div>
+
+                  <label for="playerPhone" class="mb-2 mr-sm-2">Phone Number:</label>
+                  <input type="text" class="form-control mb-2 mr-sm-2" placeholder="Phone Number" id="playerPhone">
+                  <div id="playerPhoneErr"></div>
+
+                  <select id="league">
+                    <option value="league" disabled selected>League</option>
+                    <option value="superliga">Superliga</option>
+                    <option value="bundesliga">Bundesliga</option>
+                    <option value="seriaA">Serie A</option>
+                    <option value="laLiga">La Liga</option>
+                  </select>
+
+                  <select id="ageGroup">
+                    <option value="ageGroup" disabled selected>Age Group</option>
+                    <option value="U17">U17</option>
+                    <option value="U16">U16</option>
+                    <option value="U15">U15</option>
+                    <option value="U14">U14</option>
+                  </select>
+
+                  <input type="file" name="pic" id="pic">
+                </div>
+                <div class="form-group col-md-4 col-xs-4 col-sm-4">
+                  <h2>Parent Contact Info:</h2>
+
+                  <label for="parFirstName" class="mb-2 mr-sm-2">Parent First Name:</label>
+                  <input type="text" class="form-control mb-2 mr-sm-2" placeholder="First Name" id="parFirstName">
+                  <div id="parNameErr"></div>
+
+                  <label for="parLastName" class="mb-2 mr-sm-2">Parent Last Name:</label>
+                  <input type="text" class="form-control mb-2 mr-sm-2" placeholder="Last Name" id="parLastName">
+                  <div id="parLastNameErr"></div>
+
+                  <label for="parPhone" class="mb-2 mr-sm-2">Parent Phone Number:</label>
+                  <input type="text" class="form-control mb-2 mr-sm-2" placeholder="Phone Number" id="parPhone">
+                  <div id="parPhoneErr"></div>
+
+                  <button type="submit" class="btn btn-primary" onclick="checkPlayerForm()" id="submitTeam">Submit</button>
+                  <button class="btn btn-primary" onclick="stop()" id="cancelSubmit">Cancel</button> <!--stop() calls preventDefault() and stopPropagation() -->
+                  <div id="submitErr"></div>
+                </div>
+            </form>
+        </div>
+      </section>
+
+          <div class="row">
+            <footer class="col-md-12">
+              <p>&copy copyright belongs to Matias Galante. Use of this website constitutes your acceptance on the terms and use.</p>
+            </footer>
+          </div>
+
+        </div>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.10/jquery.mask.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="https://cdn.datatables.net/v/dt/dt-1.10.18/af-2.3.2/b-1.5.4/r-2.2.2/sl-1.2.6/datatables.min.js"></script>
+  <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.3.1.min.js"><\/script>')</script>
+  <script src="js/formValidation.js"></script>
+
+  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+  <script>
+    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+    ga('create', 'UA-XXXXX-Y', 'auto'); ga('send', 'pageview')
+  </script>
+  <script src="https://www.google-analytics.com/analytics.js" async defer></script>
+  <script>
+    $(document).ready(function(){
+      /*rendTableEditMode($("#teamTable")); // call func to render table for teams in edit mode*/
+
+      //phone number masking, makes user only type numbers in following format
+      $('input[id="playerPhone"]').mask("(000) 000-0000");
+      $('input[id="parPhone"]').mask("(000) 000-0000");
+
+      playerBlurValidation(); // does validation on .blur()
+
+    });
+  </script>
+</body>
+
+</html>

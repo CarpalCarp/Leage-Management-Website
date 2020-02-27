@@ -1,0 +1,203 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+  <!-- Place favicon.ico in the root directory -->
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+
+  <!-- DataTables -->
+  <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/bs4/jq-3.3.1/dt-1.10.18/af-2.3.2/b-1.5.4/r-2.2.2/sl-1.2.6/datatables.min.css"/>
+
+  <!-- Font Awesome icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+</head>
+
+<body>
+  <!--[if lte IE 9]>
+    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+  <![endif]-->
+
+  <!-- Add your site or application content here -->
+    <nav class="navbar navbar-inverse">
+          <div class="container-fluid">
+            <div class="navbar-header">
+                <a href="#">
+                    <img src="img/soccerBall.png" alt="Soccer Ball" width="50px" height="50px">
+                    <button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#myDropDown">
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                    </button>
+                </a>
+            </div>
+              <div class="collapse navbar-collapse" id="myDropDown">
+                <ul class="nav navbar-nav">
+                  <li><a href="home.html">Home</a></li>
+                  <li><a href="teams.html" target="_blank">Teams</a></li>
+                  <li><a href="#">Superliga</a></li>
+                  <li><a href="#">Bundesliga</a></li>
+                  <li><a href="#">Serie A</a></li>
+                  <li><a href="#">La Liga</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+                    <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                    <li><a href="#">Highlights</a></li>
+                    <li><a href="#">More</a></li>
+                </ul>
+            </div>
+          </div>
+    </nav>
+
+    <div class="container-fluid">
+      <section>
+        <div class="row" id="sectionRowScores">
+            <div class="col-md-2"><span class="scoreButtons">Top Scores</span></div>
+            <div class="col-md-2">
+                <table class="table table-hover table-condensed">
+                    <tbody>
+                        <tr><td>
+                            <img src="img/riverPlate.png" alt="River Plate Logo" width="25px" height="25px">
+                            River Plate</td>
+                          <td>2</td>
+                          <td>FT</td>
+                        </tr>
+                        <tr><td>
+                            <img src="img/talleresLogo.png" alt="Talleres Logo" width="25px" height="25px">
+                            Talleres</td>
+                          <td>1</td>
+                          <td>1/12/19</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="col-md-2">
+            <table class="table table-hover table-condensed">
+                    <tbody>
+                      <tr><td>
+                          <img src="img/barcelonaLogo.png" alt="BarcelonaLogo" width="25px" height="25px">
+                          Barcelona</td>
+                        <td>3</td>
+                        <td>FT</td>
+                      </tr>
+                      <tr><td>
+                          <img src="img/realMadridLogo.png" alt="RealMadridLogo" width="25px" height="25px">
+                          Real Ma.</td>
+                        <td>1</td>
+                        <td>12/15/18</td>
+                      </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="col-md-2">
+            <table class="table table-hover table-condensed">
+                    <tbody>
+                      <tr><td>
+                          <img src="img/fcBayernMunichLogo.png" alt="FCBayernLogo" width="25px" height="25px">
+                          FC Bayern</td>
+                        <td>2</td>
+                        <td>FT</td>
+                      </tr>
+                      <tr><td>
+                          <img src="img/eintrachtFrankfurtLogo.png" alt="EintrachtLogo" width="25px" height="25px">
+                          Eintracht F.</td>
+                        <td>2</td>
+                        <td>12/10/18</td>
+                      </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="col-md-2">
+            <table class="table table-hover table-condensed">
+                    <tbody>
+                      <tr><td>
+                          <img src="img/juventusLogo.png" alt="JuventusLogo" width="25px" height="25px">
+                          Juventus</td>
+                        <td>2</td>
+                        <td>FT</td>
+                      </tr>
+                      <tr><td>
+                          <img src="img/acMilanLogo.png" alt="ACMilanLogo" width="25px" height="25px">
+                          AC Milan</td>
+                        <td>1</td>
+                        <td>11/22/18</td>
+                      </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="col-md-2"><span class="scoreButtons">All Scores</span></div>
+        </div>
+      </section>
+
+        <div class="row homeLayout">
+            <aside class="col-md-3 col-xs-9 col-sm-9">
+              <div>
+                <h2>Schedule</h2>
+              </div>
+              <div>
+                <p>La Liga: Tomorrow, 8:15 AM</p>
+                <p><img src="img/barcelonaLogo.png" alt="Logo" width="30px" height="30px">&emsp; vs &emsp;<img src="img/sevillaSVLogo.png" alt="Logo" width="30px" height="30px"></p>
+              </div>
+              <div>
+                <p>Argentine Primera Division: Tuesday, 3:00 PM</p>
+                <p><img src="img/riverPlate.png" alt="Logo" width="30px" height="30px">&emsp; vs &emsp;<img src="img/bocaJrsLogo.png" alt="Logo" width="25px" height="30px"></p>
+              </div>
+              <div>
+                <p>Serie A: Thursday, 8:00 PM</p>
+                <p><img src="img/juventusLogo.png" alt="Logo" width="30px" height="30px">&emsp; vs &emsp;<img src="img/interMilanLogo.png" alt="Logo" width="25px" height="30px"></p>
+              </div>
+              <div>
+                <p>Bundesliga: Friday, 1:00 PM</p>
+                <p><img src="img/fcBayernMunichLogo.png" alt="Logo" width="30px" height="30px">&emsp; vs &emsp;<img src="img/BorussiaDortmundLogo.png" alt="Logo" width="30px" height="30px"></p>
+              </div>
+            </aside>
+
+            <div class="col-md-6 col-xs-9 col-sm-9">
+              <!--<iframe width="100%" height="100%" src="https://www.youtube.com/watch?v=-4BEexXEoiA"></iframe>-->
+			  <video width="500" height="500" controls>
+				<source src="video/chesito.mp4" type="video/mp4">
+			  </video>
+            </div>
+        </div>
+
+          <footer class="row">
+            <div class="col-md-12">
+                    <p>&copy copyright belongs to Matias Galante. Use of this website constitutes your acceptance on the terms and use.</p>
+            </div>
+          </footer>
+
+    </div>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="https://cdn.datatables.net/v/bs4/jq-3.3.1/dt-1.10.18/af-2.3.2/b-1.5.4/r-2.2.2/sl-1.2.6/datatables.min.js"></script>
+  <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.3.1.min.js"><\/script>')</script>
+
+  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+  <script>
+    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+    ga('create', 'UA-XXXXX-Y', 'auto'); ga('send', 'pageview')
+  </script>
+  <script src="https://www.google-analytics.com/analytics.js" async defer></script>
+  <script>
+    $(document).ready(function(){
+      $("#sectionRowScores").show("slow");
+    });
+  </script>
+</body>
+
+</html>

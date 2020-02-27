@@ -1,0 +1,121 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+  <!-- Place favicon.ico in the root directory -->
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+
+  <!-- Font Awesome icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+</head>
+
+<body>
+  <!--[if lte IE 9]>
+    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+  <![endif]-->
+
+  <!-- Add your site or application content here -->
+  <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+          <div class="navbar-header">
+              <a href="#">
+                  <img src="img/soccerBall.png" alt="Soccer Ball" width="50px" height="50px">
+                  <button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#myDropDown">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                  </button>
+              </a>
+          </div>
+            <div class="collapse navbar-collapse" id="myDropDown">
+              <ul class="nav navbar-nav">
+                <li><a href="home.html" target="_blank">Home</a></li>
+                <li><a href="teams.html" target="_blank">Teams</a></li>
+                <li><a href="#">Superliga</a></li>
+                <li><a href="#">Bundesliga</a></li>
+                <li><a href="#">Serie A</a></li>
+                <li><a href="#">La Liga</a></li>
+              </ul>
+              <ul class="nav navbar-nav navbar-right">
+                  <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+                  <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                  <li><a href="#">Highlights</a></li>
+                  <li><a href="#">More</a></li>
+              </ul>
+          </div>
+        </div>
+  </nav>
+
+  <div class="container-fluid">
+    <header>
+      <div id="teamPageHeader" class="row">
+        <div class="col-md-4 col-sm-4 col-xs-4">
+          <img id="teamPageLogo" src="img/riverPlate.png" alt="RiverLogo" width="100px" height="100px">
+        </div>
+        <div class="col-md-6 col-sm-6 col-xs-6">
+          <p>Team Name: River Plate</p>
+          <p>Coach: Marcelo Gallardo</p>
+          <p>League: Superliga Argentina</p>
+        </div>
+        <div class="col-md-2 col-sm-2 col-xs-2">
+        </div>
+      </div>
+    </header>
+
+    <div class="row centerLayout">
+      <main id="teamPageMain" class="col-md-10 col-sm-10 col-xs-10 table-responsive">
+        <h2>Players</h2>
+        <table id="playerTable" class="table table-hover">
+          <!-- jquery dynamically adds table content here from playerTblRender.js -->
+        </table>
+      </main>
+    </div>
+
+    <div class="row">
+      <footer class="col-md-12 col-sm-12 col-xs-12">
+        <p>&copy copyright belongs to Matias Galante. Use of this website constitutes your acceptance on the terms and use.</p>
+      </footer>
+    </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous"></script>
+  <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.3.1.min.js"><\/script>')</script>
+  <script src="js/tblRender.js"></script>
+
+  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+  <script>
+    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+    ga('create', 'UA-XXXXX-Y', 'auto'); ga('send', 'pageview')
+  </script>
+  <script src="https://www.google-analytics.com/analytics.js" async defer></script>
+
+  <script>
+    $(document).ready(function(){
+      $('[data-toggle="popover"]').popover(); // enable a popover effect when mouse over player name
+
+      rendTable($("#playerTable"), "player"); // calls rendPlrTbl() to render the table dynamically
+
+      // hide the id column in table
+      $("#playerTable tr>td:first-child").css("visibility", "hidden");
+    });
+  </script>
+
+</body>
+
+</html>
