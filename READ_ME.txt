@@ -1,7 +1,7 @@
 This is a front-end view of a soccer league website. It's main purpose was to
 create teams and players.
 
-Look at the screenshots in the links folder which shows the links that work
+Look at the screenshots below to see what links work.
 
 The delete teams/players options do not work because this was only a pure front-end
 website just for looks. I have one made in php and mysql and you can delete and add teams/players
