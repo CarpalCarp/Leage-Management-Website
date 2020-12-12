@@ -4,7 +4,7 @@ create teams and players.
 Look at the screenshots in the links folder which shows the links that work
 
 The delete teams/players options do not work because this was only a pure front-end
-website. I have one made in php and mysql and you can delete and add teams/players
+website just for looks. I have one made in php and mysql and you can delete and add teams/players
 on the list.
 
 Also the video on the home page is purely a filler. I used to have a Youtube
