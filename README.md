@@ -11,5 +11,5 @@ Also the video on the home page is purely a filler. I used to have a Youtube
 embedded video but contents always change by the owner and so I put a video
 of a cat as a filler.
 
-![GitHub Logo](/HomePage.png)
-![GitHub Logo](/TeamsPage.png)
+![GitHub Logo](/HomePage.PNG)
+![GitHub Logo](/TeamsPage.PNG)
