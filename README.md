@@ -1,6 +1,8 @@
 This is a front-end view of a soccer league website. It's main purpose was to
 create teams and players.
 
+https://git.io/JtoDm
+
 Look at the screenshots below to see what links work.
 
 The delete teams/players options do not work because this was only a pure front-end
